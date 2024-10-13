@@ -15,8 +15,8 @@
 
 <body>
     </head>
-    <!-- <nav class="h-14 w-full fixed flex justify-between bg-black-1 backdrop-blur z-20">
-        <img src="./asset/image/threelogylogodark.png" alt="Threelogy" class="ml-6 h-full">
+    <nav class="h-14 w-full fixed flex justify-between bg-black-1 backdrop-blur z-20">
+        <img src="./asset/image/threelogylogodarkwithtext.png" alt="Threelogy" class="ml-6 h-full">
         <div class="flex items-center mr-6 group">
             <button id="menuButton" aria-label="Menu"
                 class="md:hidden flex items-center justify-center p-2 focus:outline-none">
@@ -25,7 +25,7 @@
                 </svg>
             </button>
             <div id="dropDown"
-                class="hidden md:flex absolute bg-slate-800 rounded-lg backdrop-blur-2xl z-30 right-0 top-full translate-y-1 md:static md:space-x-6 md:bg-transparent">
+                class="hidden mr-3 md:flex absolute bg-slate-800 rounded-lg backdrop-blur-2xl z-30 right-0 top-full translate-y-1 md:static md:space-x-6 md:bg-transparent">
                 <ul class="flex flex-col md:flex-row text-white">
                     <li><a href="home.html"
                             class="block leading-none px-4 py-2 font-bold hover:text-gray-400 duration-300">Home</a>
@@ -42,33 +42,41 @@
                 </ul>
             </div>
         </div>
-    </nav> -->
-    <main class="w-full h-screen bg bg-prussian-blue py-16 px-6">
-        <div>
-            <div class="h"></div>
-            <!-- <img src="" alt=""> -->
-            <div>
-                <h1 class="text-white text-xl">What is a Threelogy?</h1>
-                <p class="text-white text-sm">Threelogy is a creative group founded by three people. Michael, Okta, and
+    </nav>
+    <main class="w-full h-max bg bg-prussian-blue pt-28 pb-8 px-6">
+        <!-- segment 1 -->
+        <div id="container-1" class="h-max w-full flex flex-col items-center">
+            <div class="h-60 w-60 bg-black rounded-xl flex justify-center items-center">
+                <img src="./asset/image/threelogylogodark.png" alt="Threelogy" class="p-2">
+            </div>
+            <div class="h-max text-center md:text-left md:ml-2">
+                <h1 class="text-white text-2xl font-bold my-5 sm:text-4xl">What is a Threelogy?</h1>
+                <p class="text-white text-lg sm:text-2xl ">
+                    Threelogy is a creative group founded by three people. Michael, Okta, and
                     Putra. The team specializes in offering a wide range of services, from website development, PPT
                     design, infographics, to poster creation, and other creative solutions. With a wide range of
-                    expertise, we are ready to help clients to create attractive works that suit their needs.</p>
+                    expertise, we are ready to help clients to create attractive works that suit their needs.
+                </p>
             </div>
         </div>
-        <div class="flex h-max w-max">
-            <div class="h-max w-max">
-                <h1 class="text-white text-xl">Goal</h1>
-                <p class="text-white text-sm">Threelogy's main goal is to help you turn your ideas and thoughts into
+        <!-- segment 2 -->
+        <div id="container-2" class="h-max w-full flex flex-col items-center pt-6">
+            <div id="divImage" class="h-60 w-60 bg-black rounded-xl flex justify-center items-center">
+                <img src="./asset/image/3org.png" alt="Three Man Powers" class="p-2">
+            </div>
+            <div class="h-max text-center md:mr-2 md:text-right">
+                <h1 class="text-white text-2xl font-bold my-5 sm:text-4xl">Goal</h1>
+                <p class="text-white text-lg sm:text-2xl ">
+                    Threelogy's main goal is to help you turn your ideas and thoughts into
                     reality through web development, design and video services. We are committed to providing creative
                     solutions that make this process easier and more enjoyable, so that every idea can be turned into
-                    professional and impactful work.</p>
-            </div>
-            <div>
-                <img src="./asset/image/image.png" alt="" class="w-20 rounded-xl">
+                    professional and impactful work.
+                </p>
             </div>
         </div>
     </main>
-    <!-- <footer class="h-1/4 w-full bg-rich-black py-3 px-6 sm:flex">
+    
+    <footer class="h-1/4 w-full bg-rich-black py-3 px-6 sm:flex">
         <img src="./asset/image/threelogylogodark.png" alt="Threelogy" class="h-28 pr-5 sm:h-40" />
         <div class="flex py-3 sm:ml-8">
             <div class="dynamic-margin sm:mr-4">
@@ -112,7 +120,7 @@
                 </ul>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script src="./js/app.js"></script>
 </body>
 
