@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             container2.removeChild(divImage);
             container2.appendChild(divImage);
         }else{
-            
+            container2.removeChild(divImage);
+            container2.appendChild(divImage);
         }
         
     }

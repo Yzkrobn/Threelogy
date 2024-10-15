@@ -1,16 +1,31 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A brief description of the page." />
-    <meta name="keywords" content="Designing, Web Developing, Video Editing" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <meta property="og:title" content="My Website" />
-    <meta property="og:description" content="A brief description of my website." />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Home - Threelogy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="bg-black h-4 w-4 text-white">text</div>
+<body class="bg-blue-900 flex justify-center items-center min-h-screen">
+    <!-- Black Container -->
+    <div class="bg-black p-6 rounded-lg max-w-md shadow-lg">
+        <!-- White Card Section -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Image Section -->
+            <div class="relative">
+                <img src="https://via.placeholder.com/400x250" alt="Designer Workspace" class="w-full h-auto">
+                <div class="absolute bottom-3 right-3 bg-white p-1 rounded-full">
+                    <img src="https://via.placeholder.com/50" alt="DSM Logo" class="w-10 h-10">
+                </div>
+            </div>
+            <!-- Text Section -->
+            <div class="p-6">
+                <h2 class="text-xl font-bold text-center text-gray-800">DESIGNER</h2>
+                <p class="text-gray-600 text-center mt-2">
+                    "We provide video editing services, perfecting every detail to produce engaging and impactful videos. From basic editing to visual effects, we ensure videos are memorable for your audience."
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
