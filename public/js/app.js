@@ -4,7 +4,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const container1 = document.getElementById('container-1');
     const container2 = document.getElementById('container-2');
     const divImage = document.getElementById('divImage');
+    const location1 = document.getElementById('location-1');
+    const location2 = document.getElementById('location-2');
 
+    // Fungsi untuk memindahkan divImage berdasarkan ukuran layar
+    const adjustDivImagePosition = () => {
+        if (location1 && location2 && divImage) { 
+            if (window.innerWidth >= 768) {
+                if (location1.contains(divImage)) {
+                    location1.removeChild(divImage);
+                    location2.appendChild(divImage);
+                }
+            } else {
+                if (location2.contains(divImage)) {
+                    location2.removeChild(divImage);
+                    location1.appendChild(divImage);
+                }
+            }
+        }
+    };
+
+    // Panggil fungsi saat halaman pertama kali dimuat
+    adjustDivImagePosition();
+
+    // Panggil fungsi saat ukuran layar diubah
+    window.addEventListener('resize', adjustDivImagePosition);
+
+    // Dropdown menu toggle
     if (menuButton && dropDownNav) {
         menuButton.addEventListener('click', () => {
             dropDownNav.classList.toggle('hidden');
@@ -17,29 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (divImage) {
-        if (window.innerWidth >= 768) {
-            container2.removeChild(divImage);
-            container2.appendChild(divImage);
-        }else{
-            container2.removeChild(divImage);
-            container2.appendChild(divImage);
-        }
-        
-    }
-
-    const containers = [container1, container2];
-    containers.forEach(flexContainer => {
-        if (flexContainer) {
-            if (window.innerWidth >= 768) {
-                flexContainer.classList.remove('flex-col');
-            } else {
-                flexContainer.classList.add('flex-col');
-            }
-        }
-    });
-
-    window.addEventListener('resize', () => {
+    // Fungsi untuk mengubah flex direction pada container berdasarkan ukuran layar
+    const adjustFlexDirection = () => {
+        const containers = [container1, container2];
         containers.forEach(flexContainer => {
             if (flexContainer) {
                 if (window.innerWidth >= 768) {
@@ -49,5 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
-    });
+    };
+
+    // Panggil fungsi saat halaman pertama kali dimuat
+    adjustFlexDirection();
+
+    // Panggil fungsi saat ukuran layar diubah
+    window.addEventListener('resize', adjustFlexDirection);
 });
