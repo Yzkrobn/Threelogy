@@ -11,6 +11,7 @@ module.exports = {
         'rich-black':'#00031B',
         'black-1':'#010000',
         'prussian-blue':'#082F49',
+        'silver-lake-blue':'#5B99BF',
       },
     },
   },
