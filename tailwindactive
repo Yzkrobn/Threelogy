@@ -1,7 +1,1 @@
 npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch
-
-
-
-git commit -m "First commit"
-git remote add origin https://github.com/Yzkrobn/Threelogy.git
-git push -u origin main
